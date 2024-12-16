@@ -10,17 +10,15 @@ const Card = () => {
                 image="src/assets/projects/site1.png"
                 CardTitle="Site de portifólio"
                 titleHref="/#about"
-                btnHref="/#"
+                btnHref="https://github.com/MateusResendeR/devSite"
                 CardDescription="Site para exposição de projetos pessoais e divulgação de trabalhos externos."
-                Button="View Details"
+                Button="GitHub"
             />
             <SingleCard
                 titleHref="https://onpowermidia.com.br/"
                 image="src/assets/projects/site2.png"
                 CardTitle="OnPower"
                 CardDescription="Site para uma empresa de publicidade digital e serviços de carregamento de dispositivos móveis"
-                Button="View Details" 
-                btnHref="/#"
             />
           </div>
         </div>
@@ -31,7 +29,16 @@ const Card = () => {
 
 export default Card;
 
-const SingleCard = ({
+interface SingleCardProps {
+  image: string;
+  Button?: string;
+  CardDescription: string;
+  CardTitle: string;
+  titleHref?: string;
+  btnHref?: string;
+}
+
+const SingleCard: React.FC<SingleCardProps> =({
   image,
   Button,
   CardDescription,
@@ -60,7 +67,7 @@ const SingleCard = ({
 
           {Button && (
             <a
-              href={btnHref ? btnHref : "#"}
+              href={btnHref ? btnHref : "#"} target="_blank" rel="noopener noreferrer"
               className="inline-block rounded-full border border-gray-3 px-7 py-2 text-base font-medium text-body-color transition hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-dark-6"
             >
               {Button}

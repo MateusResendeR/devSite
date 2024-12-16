@@ -1,0 +1,7 @@
+[build]
+  publish = "build"
+  command = "npm run build"
+
+[site]
+  name = "mateus-resende"
+  url = "https://meu-site.netlify.app"
