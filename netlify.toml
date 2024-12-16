@@ -3,5 +3,8 @@
   command = "npm run build"
 
 [site]
-  name = "mateus-resende"
-  url = "https://meu-site.netlify.app"
+  name = "site-mateus"
+  url = "https://site-mateus.netlify.app"
+
+[build.environment]
+  NODE_VERSION = "16"
