@@ -6,7 +6,7 @@ const Footer = () => {
       <footer className=" w-full  bg-white pb-5 pt-5">
         <div className="flex flex-col max-w-[1800px] items-center">
           <a href="/#header">
-            <img src="public/logo.svg" alt="logo" className="w-64"></img>
+            <img src="/logo.svg" alt="logo" className="w-64"></img>
           </a>
           <div className="flex flex-row w-full justify-center gap-4 p-4 md:p-0">
             <div className="w-[220px]">

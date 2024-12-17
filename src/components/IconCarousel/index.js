@@ -3,13 +3,13 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 const IconCarousel = () => {
     const icons = [
-        { id: 1, src: "public/icons/laravel.png", alt: "Laravel" },
-        { id: 2, src: "public/icons/php.png", alt: "PHP" },
-        { id: 3, src: "public/icons/js.png", alt: "JavaScript" },
-        { id: 4, src: "public/icons/typescript.png", alt: "TypeScript" },
-        { id: 5, src: "public/icons/sciene.png", alt: "React" },
-        { id: 6, src: "public/icons/html.png", alt: "HTML" },
-        { id: 7, src: "public/icons/css.png", alt: "CSS" },
+        { id: 1, src: "/icons/laravel.png", alt: "Laravel" },
+        { id: 2, src: "/icons/php.png", alt: "PHP" },
+        { id: 3, src: "/icons/js.png", alt: "JavaScript" },
+        { id: 4, src: "/icons/typescript.png", alt: "TypeScript" },
+        { id: 5, src: "/icons/sciene.png", alt: "React" },
+        { id: 6, src: "/icons/html.png", alt: "HTML" },
+        { id: 7, src: "/icons/css.png", alt: "CSS" },
     ];
     return (_jsx(Swiper, { modules: [Autoplay], slidesPerView: 6, loop: true, speed: 10000, spaceBetween: 20, autoplay: {
             delay: 0,

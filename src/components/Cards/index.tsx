@@ -7,7 +7,7 @@ const Card = () => {
         <div className="container">
           <div className="grid gap-8 sm:grid-cols-2">
             <SingleCard
-                image="public/projects/site1.png"
+                image="/projects/site1.png"
                 CardTitle="Site de portifólio"
                 titleHref="/#about"
                 btnHref="https://github.com/MateusResendeR/devSite"
@@ -16,7 +16,7 @@ const Card = () => {
             />
             <SingleCard
                 titleHref="https://onpowermidia.com.br/"
-                image="public/projects/site2.png"
+                image="/projects/site2.png"
                 CardTitle="OnPower"
                 CardDescription="Site para uma empresa de publicidade digital e serviços de carregamento de dispositivos móveis"
             />
