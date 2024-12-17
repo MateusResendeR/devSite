@@ -1,7 +1,7 @@
 const About = () => {
 
     const downloadPdf = () => {
-        const pdfUrl = "src/assets/resume/ProfileMateus.pdf";
+        const pdfUrl = "public/resume/ProfileMateus.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
         link.download = "Curriculo-Mateus-Resende.pdf"; // specify the filename
@@ -22,15 +22,15 @@ const About = () => {
                     JavaScript/TypeScript, Node.js e Tailwind CSS e Docker.</span>
                 <div className="flex gap-2">
                     <a href="https://github.com/MateusResendeR" target="_blank" rel="noopener noreferrer">
-                        <img className="w-16 cursor-pointer" src="src/assets/icons/github.png"></img>
+                        <img className="w-16 cursor-pointer" src="public/icons/github.png"></img>
                     </a>
 
                     <a href="https://www.linkedin.com/in/mateus-resende-05b349172" target="_blank" rel="noopener noreferrer">
-                        <img className="w-16 cursor-pointer" src="src/assets/icons/linkedin.png"></img>
+                        <img className="w-16 cursor-pointer" src="public/icons/linkedin.png"></img>
                     </a>
                     <button onClick={downloadPdf} className='bg-dark dark:bg-dark-2 border-dark dark:border-dark-2 border rounded-full inline-flex items-center justify-center py-3 px-7 text-center text-base font-medium text-white hover:bg-body-color hover:border-body-color disabled:bg-gray-3 disabled:border-gray-3 disabled:text-dark-5'>
                         <span className='mr-[10px]'>
-                            <img className="w-6 text-white" src="src/assets/icons/download.png"></img>
+                            <img className="w-6 text-white" src="public/icons/download.png"></img>
                         </span>
                         Baixar currículo
                     </button>
