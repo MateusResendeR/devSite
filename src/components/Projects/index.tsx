@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-import IconCarousel from "../IconCarousel";
 import Card from "../Cards";
 
 const Projects = () => {

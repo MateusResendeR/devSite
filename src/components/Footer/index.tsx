@@ -1,4 +1,4 @@
-import React from "react";
+import { PropsWithChildren } from "react";
 
 const Footer = () => {
   return (
@@ -71,7 +71,11 @@ const Footer = () => {
 
 export default Footer;
 
-const LinkGroup = ({ children, header }) => {
+interface LinkGroupProps extends PropsWithChildren {
+  header: string;
+}
+
+const LinkGroup: React.FC<LinkGroupProps> = ({ children, header }) => {
   return (
     <>
       <div className="w-full">
@@ -86,7 +90,12 @@ const LinkGroup = ({ children, header }) => {
   );
 };
 
-const NavLink = ({ link, label }) => {
+interface NavLinkProps {
+  link: string;
+  label: string;
+}
+
+const NavLink: React.FC<NavLinkProps> = ({ link, label }) => {
   return (
     <li>
       <a

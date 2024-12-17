@@ -61,7 +61,12 @@ const Header = () => {
 
 export default Header;
 
-const ListItem = ({ children, NavLink }) => {
+interface ListItemProps {
+  children: React.ReactNode;
+  NavLink: string;
+}
+
+const ListItem: React.FC<ListItemProps> = ({ children, NavLink }) => {
   return (
     <>
       <li>

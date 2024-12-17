@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import IconCarousel from "../IconCarousel";
 
 const Skills = () => {
