@@ -2,8 +2,8 @@ import { PropsWithChildren } from "react";
 
 const Footer = () => {
   return (
-    <>
-      <footer className=" w-full  bg-white pb-5 pt-5">
+    <div className="w-full h-auto flex-row md:flex justify-center">
+      <footer className=" w-full  bg-white pb-5 pt-5 justify-items-center">
         <div className="flex flex-col max-w-[1800px] items-center">
           <a href="/#header">
             <img src="/logo.svg" alt="logo" className="w-64"></img>
@@ -17,7 +17,7 @@ const Footer = () => {
                 <NavLink link="/#projects" label="Projetos" />
               </LinkGroup>
             </div>
-            <div className="flex flex-row w-[220px]">
+            <div className="flex flex-row md:w-[220px]">
               <div className="w-full">
                 <div className="w-full">
                   <h4 className="mb-4 text-lg font-semibold text-dark dark:text-white">
@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
 
       </footer>
-    </>
+    </div>
   );
 };
 
